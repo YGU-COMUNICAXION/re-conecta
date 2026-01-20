@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Optima";
+  src: url("/optima-regular.ttf") format("ttf");
+}
+
+@theme {
+  --font-title: "Optima", sans-serif;
+}
