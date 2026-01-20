@@ -11,6 +11,12 @@ import bgImage from "../assets/bg.PNG";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Re-Conecta</title>
 	</head>
 	<body style={`--page-bg: url(${bgImage.src})`}>
@@ -26,7 +32,7 @@ import bgImage from "../assets/bg.PNG";
 <style>
 	:global(body) {
 		margin: 0;
-		font-family: "Helvetica Neue", Arial, sans-serif;
+		font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 		background-image: var(--page-bg);
 		background-size: cover;
 		background-position: center;
@@ -47,6 +53,10 @@ import bgImage from "../assets/bg.PNG";
 		min-height: 100vh;
 		position: relative;
 		z-index: 1;
+	}
+
+	:global(html) {
+		scroll-behavior: smooth;
 	}
 
 	:global(main > *) {

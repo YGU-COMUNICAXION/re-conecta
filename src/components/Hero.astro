@@ -1,10 +1,16 @@
 <section class="hero">
 	<div class="hero__content">
-		<p class="hero__eyebrow">RE-CONECTA CON TU</p>
-		<h1 class="hero__title">SANADOR INTERIOR</h1>
+		<h1 class="hero__title">
+			RE-CONECTA CON TU
+			<br />
+			SANADOR INTERIOR
+		</h1>
 		<div class="hero__divider"></div>
 		<p class="hero__details">Viernes 20- Domingo 22 de Febrero</p>
 		<p class="hero__details">Hunkapi - Valle de Bravo</p>
+		<a class="hero__scroll" href="#registro" aria-label="Ir al formulario de registro">
+			<span aria-hidden="true">⌄</span>
+		</a>
 	</div>
 </section>
 
@@ -25,18 +31,13 @@
 		z-index: 1;
 	}
 
-	.hero__eyebrow {
-		font-size: clamp(1.1rem, 2vw, 1.5rem);
-		letter-spacing: 0.35rem;
-		margin: 0 0 0.6rem;
-		text-transform: uppercase;
-	}
-
 	.hero__title {
-		font-size: clamp(2.4rem, 6vw, 4.5rem);
-		margin: 0 0 1.5rem;
+		font-family: "Cinzel", "Times New Roman", serif;
+		font-size: clamp(2.2rem, 5vw, 4rem);
+		margin: 0 0 1.2rem;
 		letter-spacing: 0.25rem;
 		text-transform: uppercase;
+		line-height: 1.15;
 	}
 
 	.hero__divider {
@@ -48,6 +49,36 @@
 
 	.hero__details {
 		margin: 0.35rem 0;
-		font-size: clamp(1rem, 2vw, 1.25rem);
+		font-size: clamp(1rem, 2vw, 1.2rem);
+		font-weight: 300;
+	}
+
+	.hero__scroll {
+		margin-top: 2.5rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 999px;
+		border: 1px solid rgba(255, 255, 255, 0.6);
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.5rem;
+		animation: bounce 1.6s infinite;
+	}
+
+	.hero__scroll span {
+		transform: translateY(-2px);
+	}
+
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(6px);
+		}
 	}
 </style>
