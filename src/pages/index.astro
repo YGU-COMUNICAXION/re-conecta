@@ -1,16 +1,44 @@
 ---
-
+import Hero from "../components/Hero.astro";
+import RegistrationForm from "../components/RegistrationForm.astro";
+import WhatsappCTA from "../components/WhatsappCTA.astro";
+import bgImage from "../assets/bg.PNG";
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Re-Conecta</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body style={`--page-bg: url(${bgImage.src})`}>
+		<main>
+			<Hero />
+			<RegistrationForm />
+			<WhatsappCTA />
+		</main>
 	</body>
 </html>
+
+<style>
+	:global(body) {
+		margin: 0;
+		font-family: "Helvetica Neue", Arial, sans-serif;
+		background-image: var(--page-bg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		color: #1c1c1c;
+	}
+
+	:global(main) {
+		min-height: 100vh;
+	}
+
+	:global(main > *) {
+		background: transparent;
+	}
+</style>
