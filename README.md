@@ -1,43 +1,31 @@
-# Astro Starter Kit: Minimal
+# Re Conecta
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Link del proyecto publicado
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+https://re-conecta.netlify.app/
 
-## 🚀 Project Structure
+## Descripcion
 
-Inside of your Astro project, you'll see the following folders and files:
+Landing page para Re Conecta. El sitio presenta una propuesta de marca con secciones informativas, llamados a la accion y estructura responsive.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Tecnologias usadas
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- Astro
+- Tailwind CSS
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Requisitos
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Node.js 18+
+- npm
+- Cuenta de Netlify para despliegue
 
-## 🧞 Commands
+## Retos tecnicos
 
-All commands are run from the root of the project, from a terminal:
+- Crear una landing clara para comunicar la propuesta principal del proyecto.
+- Adaptar contenido visual y textual para lectura rapida.
+- Mantener buen rendimiento en un despliegue estatico.
+- Preparar componentes reutilizables para secciones de marketing.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Creditos
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Desarrollado por Jonathan Alexis Bello Lopez.
